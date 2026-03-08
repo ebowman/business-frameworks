@@ -4,7 +4,7 @@
   "generated": "2026-03-08",
   "domains": {
     "strategy": {
-      "skill_folder": "section-strategy",
+      "skill_folder": "strategy",
       "courses": [
         {"name": "Business Strategy Sprint", "uuid": "51E5E0AD-C924-4A55-A6F9-C93421C92B5A", "has_modules": true, "module_count": 4, "has_transcripts": true, "content_types": ["markdown", "multimedia", "PDF", "RTF", "email", "bookmark"], "total_records": 129},
         {"name": "Strategic Planning", "uuid": "C72753B4-301E-4F4C-98D1-7052DDDBD781", "has_modules": false, "has_transcripts": true, "content_types": ["markdown", "PDF", "picture", "unknown"], "total_records": 27},
@@ -13,7 +13,7 @@
       ]
     },
     "product": {
-      "skill_folder": "section-product",
+      "skill_folder": "product",
       "courses": [
         {"name": "Product Strategy Sprint", "uuid": "6C912347-34F4-4718-88F7-878DABD8AA42", "has_modules": true, "module_count": 2, "has_transcripts": true, "content_types": ["markdown", "multimedia", "unknown", "email", "bookmark"], "total_records": 30},
         {"name": "Product Strategy Workshop", "uuid": "03329247-FC1E-41BC-B27B-8767DCCE31F6", "has_modules": false, "has_transcripts": false, "content_types": ["unknown", "multimedia"], "total_records": 5},
@@ -27,7 +27,7 @@
       ]
     },
     "problem-solving": {
-      "skill_folder": "section-problem-solving",
+      "skill_folder": "problem-solving",
       "courses": [
         {"name": "Problem Solving Sprint", "uuid": "56D42D40-826A-422E-99B4-F6FA76CF98BC", "has_modules": false, "has_transcripts": true, "content_types": ["markdown", "multimedia", "unknown", "email"], "total_records": 20},
         {"name": "Problem Solving Sprint 2", "uuid": "B9603EC6-D319-43F5-86AE-569D41D38386", "has_modules": false, "has_transcripts": true, "content_types": ["markdown", "multimedia", "unknown"], "total_records": 15},
@@ -36,7 +36,7 @@
       ]
     },
     "finance": {
-      "skill_folder": "section-finance",
+      "skill_folder": "finance",
       "courses": [
         {"name": "Financial Fluency", "uuid": "16A8315D-8C42-400B-8E4D-97046C3A3177", "has_modules": false, "has_transcripts": true, "content_types": ["markdown", "PDF", "picture", "unknown"], "total_records": 13},
         {"name": "Financial Fluency 2", "uuid": "E5410A33-B91F-42ED-9D97-306A494E468F", "has_modules": false, "has_transcripts": true, "content_types": ["markdown", "multimedia", "unknown", "bookmark", "sheet"], "total_records": 18},
@@ -50,7 +50,7 @@
       ]
     },
     "communication": {
-      "skill_folder": "section-communication",
+      "skill_folder": "communication",
       "courses": [
         {"name": "Public Speaking Sprint", "uuid": "3586A84E-ECF3-48C1-A989-68AD88A70735", "has_modules": false, "has_transcripts": true, "content_types": ["markdown", "multimedia"], "total_records": 3},
         {"name": "Public Speaking", "uuid": "3159B071-14FE-400E-8544-037169CE9099", "has_modules": false, "has_transcripts": true, "content_types": ["markdown", "multimedia", "unknown"], "total_records": 14},
@@ -61,7 +61,7 @@
       ]
     },
     "leadership": {
-      "skill_folder": "section-leadership",
+      "skill_folder": "leadership",
       "courses": [
         {"name": "Complete Manager Sprint", "uuid": "7592C4E9-D481-455B-839B-B87A839F1B42", "has_modules": true, "has_transcripts": true, "content_types": ["markdown", "multimedia", "unknown", "PDF"], "total_records": 30},
         {"name": "Inclusive Leadership", "uuid": "BCFF2F2E-C82C-4645-B76D-EABF5158B710", "has_modules": false, "has_transcripts": true, "content_types": ["markdown", "multimedia", "unknown"], "total_records": 15},
@@ -69,26 +69,26 @@
       ]
     },
     "data": {
-      "skill_folder": "section-data",
+      "skill_folder": "data",
       "courses": [
         {"name": "Analyzing Data for Insights", "uuid": "74017862-D700-4B5B-8FE9-6DC920DA7766", "has_modules": false, "has_transcripts": true, "content_types": ["markdown", "multimedia", "unknown", "PDF"], "total_records": 15},
         {"name": "Data", "uuid": "939A3C7B-236F-4D44-BBB1-FD09B89E803E", "has_modules": false, "has_transcripts": false, "content_types": ["unknown"], "total_records": 5}
       ]
     },
     "negotiation": {
-      "skill_folder": "section-negotiation",
+      "skill_folder": "negotiation",
       "courses": [
         {"name": "Negotiation", "uuid": "A216A8A4-13EB-4E5F-8A89-22712C0F6511", "has_modules": false, "has_transcripts": true, "content_types": ["markdown", "PDF", "unknown", "bookmark", "email"], "total_records": 8}
       ]
     },
     "innovation": {
-      "skill_folder": "section-innovation",
+      "skill_folder": "innovation",
       "courses": [
         {"name": "Innovation Sprint", "uuid": "5D617F64-BF7D-4EE2-8A40-2E3497FFFF21", "has_modules": true, "has_transcripts": true, "content_types": ["markdown", "multimedia", "unknown", "PDF"], "total_records": 25}
       ]
     },
     "brand-pricing": {
-      "skill_folder": "section-brand-pricing",
+      "skill_folder": "brand-pricing",
       "courses": [
         {"name": "Brand Strategy Sprint On-Demand", "uuid": "1E13F3FB-C908-4F59-8952-D2CD869E9A49", "has_modules": true, "has_transcripts": true, "content_types": ["markdown", "multimedia", "unknown", "PDF"], "total_records": 20},
         {"name": "Pricing - A Behavioral Perspective with Adam Alter", "uuid": "0F180BA5-903D-44D2-BC54-636FC03FDFC0", "has_modules": false, "has_transcripts": true, "content_types": ["markdown", "multimedia", "unknown"], "total_records": 10},
@@ -96,7 +96,7 @@
       ]
     },
     "operations": {
-      "skill_folder": "section-operations",
+      "skill_folder": "operations",
       "courses": [
         {"name": "Operations - Aerie vs Victorias Secret", "uuid": "4C9ED009-7370-4F32-BAE1-E9B86455E072", "has_modules": false, "has_transcripts": true, "content_types": ["markdown", "multimedia"], "total_records": 8},
         {"name": "Galloway Predictions 2022-2023", "uuid": "420BB60E-7F2B-4CD3-8A61-BF17F774FF69", "has_modules": false, "has_transcripts": true, "content_types": ["markdown", "multimedia", "picture"], "total_records": 10},
