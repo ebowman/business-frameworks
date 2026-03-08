@@ -5,13 +5,17 @@ Business strategy, product, finance, leadership, and communication frameworks as
 ## Install
 
 ```bash
-git clone https://github.com/ebowman/business-frameworks.git ~/.claude/skills/business-frameworks
+git clone https://github.com/ebowman/business-frameworks.git
+cd business-frameworks
+./install.sh
 ```
+
+This symlinks each skill into `~/.claude/skills/` where Claude Code discovers them. Restart Claude Code to pick up the skills.
 
 Update anytime with:
 
 ```bash
-cd ~/.claude/skills/business-frameworks && git pull
+cd business-frameworks && git pull
 ```
 
 ## What's Included
