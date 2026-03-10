@@ -63,7 +63,7 @@ When the user presents a strategic challenge:
 
 1. **Clarify the strategic question.** Is this about growth strategy, competitive positioning, revenue model design, or organizational alignment?
 
-2. **Select the right framework.** Use the T-Algorithm for competitive/growth strategy analysis. Use the Connected Strategic Stack for planning and execution alignment. Use AI-augmented decision making for evaluating strategic options under uncertainty.
+2. **Select the right framework.** Use the T-Algorithm for competitive/growth strategy analysis. Use the Connected Strategic Stack for planning and execution alignment. Use AI-augmented decision making to deploy strategic agents that research, debate, and pressure-test options under uncertainty.
 
 3. **Apply the framework rigorously.** Walk through each component. Use real examples from the reference materials to illustrate points. Challenge assumptions.
 

@@ -389,40 +389,39 @@ AI works best for decisions that are:
 | Operations | Which vendor should we select across multiple options? |
 | Personal | Career choices, exercising options, investment decisions |
 
-### Your AI Strategic SWOT Team
+### Your Strategic Agent Team
 
-| LLM | Role | Best For |
-|-----|------|----------|
-| GPT-4 | CFO-like thought partner | Structured thinking, mental models, data analysis, slide review |
-| Claude (Anthropic) | Strategic thought partner | Conversational idea generation, feedback as personas, document review |
-| Perplexity | Research analyst | Information gathering with inline sources for easy fact-checking |
+Rather than switching between separate chat tools, deploy coordinated AI agents that research, debate, and pressure-test decisions in parallel.
+
+**Tier 1: Ruflo Hive-Mind** (when ruflo MCP server is available)
+- Spawn a mesh hive-mind with strategic personas — CFO, Customer Advocate, Competitor Analyst, Operator
+- Each agent analyzes the decision from their perspective simultaneously
+- Consensus mechanism surfaces points of agreement and genuine dissent
+- Shared memory accumulates research findings across all four phases
+
+**Tier 2: Native Claude Code Agents** (always available)
+- Launch parallel subagents for independent research streams (e.g., market data, competitive analysis, internal metrics)
+- Use WebSearch for benchmarks and competitive data (with source URLs for validation)
+- Use different model tiers: haiku for fast research sweeps, opus for deep strategic analysis
+- Chain sequential agent calls when one analysis depends on another's output
 
 ### Setting Up for Success
 
-**Step 1: Custom instructions (GPT-4)**
-Onboard GPT as your strategic advisor by providing:
-- Your role and responsibilities
-- Challenges you face
-- Resources/constraints
-- Industry and company size
-- How you want GPT to behave (risk tolerance, analytical vs. creative, output format)
-
-**Step 2: Context in every prompt**
+**Context in every prompt**
 Three pieces of context required:
 1. **The decision**: What you are trying to decide (can be broad or specific)
 2. **The outcome/goal**: What you are optimizing for
 3. **Constraints**: Budget, time, resources, decision-making authority
 
 **Privacy considerations:**
-- Disable chat history and training in consumer LLMs if company policy requires
 - Use anonymous prompts (remove company names, describe instead of uploading raw data)
-- De-identify data before uploading (remove PII, names, emails)
+- De-identify data before sharing (remove PII, names, emails)
 
 ### The Four-Phase Framework
 
 #### Phase 1: Gathering Information
 
-AI excels here -- it can read 7,500 words in about a minute versus five hours for humans.
+AI excels here — it can read 7,500 words in about a minute versus five hours for humans.
 
 **Use Case 1: Starting from scratch**
 - Ask AI to generate a list of information, data, and facts to gather for your decision
@@ -430,13 +429,13 @@ AI excels here -- it can read 7,500 words in about a minute versus five hours fo
 - Output: Fast, prioritized research brief (a B-minus first draft to start from)
 
 **Use Case 2: Finding benchmarks and competitive data**
-- Use Perplexity specifically (shows sources inline)
-- Ask for industry benchmarks, conversion rates, competitive comparisons
-- Output: Initial benchmarks with clickable sources for validation
+- Use WebSearch agents to find industry benchmarks, conversion rates, and competitive comparisons — source URLs are returned for validation
+- Launch parallel research agents when you need data from multiple domains simultaneously
+- With ruflo: assign each research domain to a hive-mind agent for concurrent deep-dives
 
 **Use Case 3: Analyzing your own data**
-- Upload de-identified datasets to GPT-4 (Advanced Data Analysis)
 - Have AI identify what is in the dataset, then ask targeted analytical questions
+- Use agents to run different analyses in parallel (segmentation, trend, cohort)
 - Output: Fast data-analyst-level analysis
 
 **AI's role**: Provides framework, cross-domain knowledge, speed
@@ -445,22 +444,24 @@ AI excels here -- it can read 7,500 words in about a minute versus five hours fo
 #### Phase 2: Identifying Options
 
 - Ask AI to generate a range of strategic options based on gathered information
-- Use multiple LLMs for different perspectives
-- Have AI think through pros/cons, risks, and tradeoffs for each option
+- Spawn agents with distinct strategic lenses: optimistic vs. pessimistic, short-term vs. long-term, customer-centric vs. operations-centric
+- Have each agent think through pros/cons, risks, and tradeoffs for its assigned option set
+- With ruflo: use hive-mind broadcast to share context, then collect per-agent option analysis
 
 #### Phase 3: Pressure Testing
 
 - Use AI to stress-test your leading options
-- Ask it to argue against your preferred choice
+- Ask it to argue against your preferred choice (or use the `/adversarial-strategy` skill for rigorous multi-model adversarial debate)
 - Have it identify risks you have not considered
-- Use it to simulate stakeholder objections
+- Simulate stakeholder objections by assigning stakeholder personas to separate agents
+- With ruflo: consensus voting across agents surfaces genuine dissent vs. unanimous agreement
 
 #### Phase 4: Getting Buy-In
 
-- Use AI to help structure your recommendation
-- Draft stakeholder communications
+- Use agents to draft stakeholder-specific communications in parallel — each agent tailors the message for a different audience (board, team, customers)
 - Anticipate and prepare for questions and pushback
 - Build the case with data and narrative
+- With ruflo: assign each stakeholder persona to an agent, then synthesize into a unified communications plan
 
 ### The Human Filter
 
