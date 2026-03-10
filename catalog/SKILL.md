@@ -10,7 +10,7 @@ description: >
 
 # executive education Skills Catalog
 
-This catalog lists all available executive education business skills. Each skill is a deep knowledge base synthesized from executive education courses courses — covering frameworks, case studies, and practical tools taught by world-class instructors.
+This catalog lists all available executive education business skills. Each skill is a deep knowledge base synthesized from executive education courses — covering frameworks, case studies, and practical tools taught by world-class instructors.
 
 ## Available Skills
 
