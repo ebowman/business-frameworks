@@ -451,7 +451,9 @@ AI excels here — it can read 7,500 words in about a minute versus five hours f
 #### Phase 3: Pressure Testing
 
 - Use AI to stress-test your leading options
-- Ask it to argue against your preferred choice (or use the `/adversarial-strategy` skill for rigorous multi-model adversarial debate)
+- Ask it to argue against your preferred choice using the tiered approach:
+  1. **Rumelt Lite** (always available) — Run the Adversarial Debate protocol from `references/adversarial-debate.md`: screen for bad strategy markers, score quality on a 0–30 scale, and debate across Strategist/Skeptic/Operator/Competitor personas using ruflo hive-mind or parallel Claude Code agents
+  2. **Full `/adversarial-strategy` plugin** (for maximum rigor) — Multi-model adversarial debate across GPT and Claude models with formal scoring, versioned output, and Rumelt feedback simulation
 - Have it identify risks you have not considered
 - Simulate stakeholder objections by assigning stakeholder personas to separate agents
 - With ruflo: consensus voting across agents surfaces genuine dissent vs. unanimous agreement

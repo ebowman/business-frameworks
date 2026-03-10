@@ -21,6 +21,7 @@ Key frameworks:
 - **T-Algorithm** — Six strategies of trillion-dollar firms (Rundles, Human Instinct, Visionary Storytelling, Benjamin Button Products, Vertical Integration, Career Accelerant)
 - **Connected Strategic Stack** — Vision → Top-Line Measures → Objectives → Key Results → Rhythm of Business
 - **AI-Augmented Decision Making** — Using AI to improve strategic decisions
+- **Adversarial Debate (Rumelt Lite)** — Pressure-test strategies using bad strategy detection, quality scoring, and structured debate protocol
 
 Use for: competitive strategy, growth vs margins analysis, recurring revenue models, strategic planning, OKR design
 

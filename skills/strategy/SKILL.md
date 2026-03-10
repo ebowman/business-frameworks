@@ -1,12 +1,13 @@
 ---
 name: strategy
 description: >
-  Apply business strategy frameworks from executive education courses (Scott Galloway, Sarah Lobkowicz, Taylor Malmsheimer).
-  Covers the T-Algorithm (six strategies of trillion-dollar firms: Rundles, Human Instinct, Visionary Storytelling,
-  Benjamin Button Products, Vertical Integration, Career Accelerant), the Connected Strategic Stack for strategic
-  planning and OKR design, and AI-augmented strategic decision making. Use when analyzing competitive strategy,
-  evaluating growth vs margins tradeoffs, designing recurring revenue models, building strategic plans, writing OKRs,
-  or making strategic decisions.
+  Apply business strategy frameworks from executive education courses (Scott Galloway, Sarah Lobkowicz, Taylor
+  Malmsheimer, Richard Rumelt). Covers the T-Algorithm (six strategies of trillion-dollar firms), the Connected
+  Strategic Stack for strategic planning and OKR design, AI-augmented strategic decision making, and the Adversarial
+  Debate protocol (Rumelt Lite) for pressure-testing strategies using bad strategy detection, quality scoring, and
+  structured multi-persona debate. Use when analyzing competitive strategy, evaluating growth vs margins tradeoffs,
+  designing recurring revenue models, building strategic plans, writing OKRs, making strategic decisions, or
+  stress-testing a strategy draft before committing.
 ---
 
 # Business Strategy
@@ -57,13 +58,19 @@ Vision → Top-Line Measures → Objectives → Key Results → Rhythm of Busine
 
 For the full strategic planning framework, OKR design, and AI-augmented decision making, see `references/strategic-planning.md`.
 
+### Adversarial Debate — Rumelt Lite
+
+A lightweight protocol for pressure-testing strategy drafts using Richard Rumelt's "Good Strategy/Bad Strategy" framework. Every good strategy has a kernel: Diagnosis (the real challenge), Guiding Policy (the approach), and Coherent Actions (coordinated execution). The protocol screens for the four markers of bad strategy (fluff, failure to face the challenge, goals-as-strategy, disconnected actions), scores quality on a 0–30 scale, and runs structured debate across strategic personas (Strategist, Skeptic, Operator, Competitor) using ruflo hive-mind or parallel Claude Code agents.
+
+For the full protocol, scoring rubric, and persona definitions, see `references/adversarial-debate.md`. For maximum-rigor multi-model adversarial debate with external LLMs, use the `/adversarial-strategy` plugin.
+
 ## How to Use This Skill
 
 When the user presents a strategic challenge:
 
 1. **Clarify the strategic question.** Is this about growth strategy, competitive positioning, revenue model design, or organizational alignment?
 
-2. **Select the right framework.** Use the T-Algorithm for competitive/growth strategy analysis. Use the Connected Strategic Stack for planning and execution alignment. Use AI-augmented decision making to deploy strategic agents that research, debate, and pressure-test options under uncertainty.
+2. **Select the right framework.** Use the T-Algorithm for competitive/growth strategy analysis. Use the Connected Strategic Stack for planning and execution alignment. Use AI-augmented decision making to deploy strategic agents that research, debate, and pressure-test options under uncertainty. Use the Adversarial Debate protocol (Rumelt Lite) to pressure-test a strategy draft for quality before committing.
 
 3. **Apply the framework rigorously.** Walk through each component. Use real examples from the reference materials to illustrate points. Challenge assumptions.
 
@@ -74,3 +81,4 @@ When the user presents a strategic challenge:
 - **Scott Galloway** (NYU Stern) — T-Algorithm, Business Strategy Sprint
 - **Sarah Lobkowicz** — Connected Strategic Stack, Strategic Planning
 - **Taylor Malmsheimer** — AI-Augmented Strategic Decision Making
+- **Richard Rumelt** (UCLA Anderson) — Strategy Kernel, Bad Strategy Detection, Adversarial Debate
