@@ -10,7 +10,11 @@ cd business-frameworks
 ./install.sh
 ```
 
-This installs the `mba` plugin into Claude Code. Restart Claude Code to activate.
+Then in Claude Code:
+
+```
+/plugin install mba@local
+```
 
 Update anytime with:
 
