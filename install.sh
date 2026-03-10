@@ -52,11 +52,9 @@ with open('$MARKETPLACE', 'w') as f:
 fi
 
 echo ""
-echo "Plugin registered. Now run in Claude Code:"
+echo "Plugin installed. Restart Claude Code, then type /mba: for autocomplete."
 echo ""
-echo "  /plugin install mba@local"
-echo ""
-echo "Skills available after install:"
+echo "Available commands:"
 echo "  /mba:strategy        /mba:finance         /mba:negotiation"
 echo "  /mba:product         /mba:communication   /mba:innovation"
 echo "  /mba:problem-solving /mba:leadership      /mba:brand-pricing"

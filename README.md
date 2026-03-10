@@ -10,11 +10,7 @@ cd business-frameworks
 ./install.sh
 ```
 
-Then in Claude Code:
-
-```
-/plugin install mba@local
-```
+Then restart Claude Code. The `/mba:` commands will appear in autocomplete.
 
 Update anytime with:
 
@@ -24,11 +20,11 @@ cd business-frameworks && git pull
 
 ## What's Included
 
-All skills are invoked as `/mba:<skill>`:
+All skills are invoked as `/mba:<skill>` (with autocomplete):
 
 | Skill | Key Frameworks | Instructors |
 |-------|---------------|-------------|
-| `/mba:strategy` | T-Algorithm (6 strategies of trillion-dollar firms), Connected Strategic Stack, OKRs | Scott Galloway, Sarah Lobkowicz |
+| `/mba:strategy` | T-Algorithm, Connected Strategic Stack, OKRs, Adversarial Debate (Rumelt Lite) | Scott Galloway, Sarah Lobkowicz, Richard Rumelt |
 | `/mba:product` | DHM Framework, GEM Framework, Hooked Model, Product Positioning, Platform Strategy | Gibson Biddle, Nir Eyal, April Dunford, Karan Girotra |
 | `/mba:problem-solving` | Hypothesis-Driven Model, MECE decomposition, issue trees, 80/20 | Jenny Tang (Bain) |
 | `/mba:finance` | SpeeD-Up Framework, Four-Component Business Case, Investor Mindset | Nicole Alexander, Eric Kim |
@@ -43,16 +39,16 @@ All skills are invoked as `/mba:<skill>`:
 
 ## How It Works
 
-Each skill is a folder under `skills/` with:
+The plugin has two layers:
 
-- `SKILL.md` — Framework summaries and instructions (loaded by Claude when relevant)
-- `references/` — Detailed knowledge docs (consulted on demand for deep dives)
+- **`commands/`** — Slash commands that provide autocomplete and entry points (e.g., `/mba:strategy`)
+- **`skills/`** — Deep knowledge bases with `SKILL.md` (framework summaries) and `references/` (detailed docs)
 
-This follows Anthropic's [skill architecture](https://www.anthropic.com/engineering/claude-code-best-practices) with progressive disclosure: Claude loads the right level of detail based on what you're asking.
+Commands load the relevant skill, which follows Anthropic's [skill architecture](https://www.anthropic.com/engineering/claude-code-best-practices) with progressive disclosure: Claude loads the right level of detail based on what you're asking.
 
 ## Usage
 
-Once installed, Claude Code automatically discovers the skills. Ask questions like:
+Type `/mba:` and autocomplete will show all available commands. Or ask questions naturally:
 
 - "Help me analyze our competitive strategy using the T-Algorithm"
 - "Walk me through building a business case for this initiative"
