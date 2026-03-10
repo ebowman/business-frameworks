@@ -1,24 +1,26 @@
 #!/bin/bash
-# Install business-frameworks skills into Claude Code
+# Install business-frameworks as a Claude Code plugin (mba:*)
 set -e
 
 REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
-SKILLS_DIR="$HOME/.claude/skills"
+PLUGIN_DIR="$HOME/.claude/plugins/mba"
 
-mkdir -p "$SKILLS_DIR"
+if [ -L "$PLUGIN_DIR" ]; then
+  rm "$PLUGIN_DIR"
+elif [ -d "$PLUGIN_DIR" ]; then
+  echo "Warning: $PLUGIN_DIR already exists. Remove it first to reinstall."
+  exit 1
+fi
 
-SKILLS=(strategy product problem-solving finance communication leadership data-analysis negotiation innovation brand-pricing operations catalog)
+mkdir -p "$(dirname "$PLUGIN_DIR")"
+ln -s "$REPO_DIR" "$PLUGIN_DIR"
 
-for skill in "${SKILLS[@]}"; do
-  if [ -L "$SKILLS_DIR/$skill" ]; then
-    rm "$SKILLS_DIR/$skill"
-  elif [ -d "$SKILLS_DIR/$skill" ]; then
-    echo "Warning: $SKILLS_DIR/$skill already exists (not a symlink), skipping"
-    continue
-  fi
-  ln -s "$REPO_DIR/$skill" "$SKILLS_DIR/$skill"
-  echo "Linked $skill"
-done
-
+echo "Installed mba plugin -> $REPO_DIR"
 echo ""
-echo "Installed ${#SKILLS[@]} skills. Restart Claude Code to pick them up."
+echo "Skills available (restart Claude Code to activate):"
+echo "  /mba:strategy        /mba:finance         /mba:negotiation"
+echo "  /mba:product         /mba:communication   /mba:innovation"
+echo "  /mba:problem-solving /mba:leadership      /mba:brand-pricing"
+echo "  /mba:data-analysis   /mba:operations      /mba:catalog"
+echo ""
+echo "Update anytime: cd $(basename "$REPO_DIR") && git pull"

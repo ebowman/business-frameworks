@@ -1,6 +1,6 @@
 # business-frameworks
 
-Business strategy, product, finance, leadership, and communication frameworks as [Claude Code](https://claude.com/claude-code) skills.
+Business strategy, product, finance, leadership, and communication frameworks as a [Claude Code](https://claude.com/claude-code) plugin.
 
 ## Install
 
@@ -10,7 +10,7 @@ cd business-frameworks
 ./install.sh
 ```
 
-This symlinks each skill into `~/.claude/skills/` where Claude Code discovers them. Restart Claude Code to pick up the skills.
+This installs the `mba` plugin into Claude Code. Restart Claude Code to activate.
 
 Update anytime with:
 
@@ -20,24 +20,26 @@ cd business-frameworks && git pull
 
 ## What's Included
 
+All skills are invoked as `/mba:<skill>`:
+
 | Skill | Key Frameworks | Instructors |
 |-------|---------------|-------------|
-| **strategy** | T-Algorithm (6 strategies of trillion-dollar firms), Connected Strategic Stack, OKRs | Scott Galloway, Sarah Lobkowicz |
-| **product** | DHM Framework, GEM Framework, Hooked Model, Product Positioning, Platform Strategy | Gibson Biddle, Nir Eyal, April Dunford, Karan Girotra |
-| **problem-solving** | Hypothesis-Driven Model, MECE decomposition, issue trees, 80/20 | Jenny Tang (Bain) |
-| **finance** | SpeeD-Up Framework, Four-Component Business Case, Investor Mindset | Nicole Alexander, Eric Kim |
-| **communication** | Hip-Hop Pillars (public speaking), 4S Framework, Hero/Shadow/Light, data storytelling | Marcus Collins, Will Storr |
-| **leadership** | Complete Manager Equation, Coaching Habit (7 questions), 3-A Inclusive Leadership | Michael Bungay Stanier, Mita Mallick |
-| **data-analysis** | Inquiry-to-Insight 5-Step, DELTA Model | Sarah Evangeline Norman, Thomas Davenport |
-| **negotiation** | 5P Framework, Planning Canvas, BATNA | Brian McDowell |
-| **innovation** | Innovation Cycle, Jobs-to-Be-Done, RIME Framework | Sara Beckman (UC Berkeley Haas) |
-| **brand-pricing** | Clock Model, behavioral pricing, customer retention | Scott Galloway, Adam Alter |
-| **operations** | Operational laddering, Aerie vs Victoria's Secret case study | Scott Galloway |
-| **catalog** | Discovery index — lists all skills with usage guidance | — |
+| `/mba:strategy` | T-Algorithm (6 strategies of trillion-dollar firms), Connected Strategic Stack, OKRs | Scott Galloway, Sarah Lobkowicz |
+| `/mba:product` | DHM Framework, GEM Framework, Hooked Model, Product Positioning, Platform Strategy | Gibson Biddle, Nir Eyal, April Dunford, Karan Girotra |
+| `/mba:problem-solving` | Hypothesis-Driven Model, MECE decomposition, issue trees, 80/20 | Jenny Tang (Bain) |
+| `/mba:finance` | SpeeD-Up Framework, Four-Component Business Case, Investor Mindset | Nicole Alexander, Eric Kim |
+| `/mba:communication` | Hip-Hop Pillars (public speaking), 4S Framework, Hero/Shadow/Light, data storytelling | Marcus Collins, Will Storr |
+| `/mba:leadership` | Complete Manager Equation, Coaching Habit (7 questions), 3-A Inclusive Leadership | Michael Bungay Stanier, Mita Mallick |
+| `/mba:data-analysis` | Inquiry-to-Insight 5-Step, DELTA Model | Sarah Evangeline Norman, Thomas Davenport |
+| `/mba:negotiation` | 5P Framework, Planning Canvas, BATNA | Brian McDowell |
+| `/mba:innovation` | Innovation Cycle, Jobs-to-Be-Done, RIME Framework | Sara Beckman (UC Berkeley Haas) |
+| `/mba:brand-pricing` | Clock Model, behavioral pricing, customer retention | Scott Galloway, Adam Alter |
+| `/mba:operations` | Operational laddering, Aerie vs Victoria's Secret case study | Scott Galloway |
+| `/mba:catalog` | Discovery index — lists all skills with usage guidance | — |
 
 ## How It Works
 
-Each skill is a folder with:
+Each skill is a folder under `skills/` with:
 
 - `SKILL.md` — Framework summaries and instructions (loaded by Claude when relevant)
 - `references/` — Detailed knowledge docs (consulted on demand for deep dives)
@@ -52,7 +54,7 @@ Once installed, Claude Code automatically discovers the skills. Ask questions li
 - "Walk me through building a business case for this initiative"
 - "How should I structure this problem using the hypothesis-driven model?"
 - "Help me position our product using April Dunford's framework"
-- "What frameworks do I have available?" (triggers the catalog skill)
+- `/mba:catalog` to see all available frameworks
 
 ## License
 

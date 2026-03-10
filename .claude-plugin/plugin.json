@@ -1,0 +1,12 @@
+{
+  "name": "mba",
+  "version": "1.0.0",
+  "description": "Business strategy, product, finance, leadership, and communication frameworks from executive education courses",
+  "author": {
+    "name": "Eric Bowman",
+    "url": "https://github.com/ebowman"
+  },
+  "repository": "https://github.com/ebowman/business-frameworks",
+  "license": "MIT",
+  "keywords": ["business", "strategy", "product", "finance", "leadership", "mba", "frameworks"]
+}
