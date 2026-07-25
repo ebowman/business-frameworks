@@ -39,6 +39,15 @@ beads.right.meta.json
 sync_base.jsonl
 export-state/
 
+# Embedded Dolt runtime data (beads-in2a.5: bd dolt push auto-created an
+# embedded Dolt copy alongside this project's legacy sqlite backend; the
+# sqlite beads.db + issues.jsonl remain the primary source of truth here,
+# this dir is just the local runtime store for the pushed refs/dolt/data copy)
+embeddeddolt/
+backup/
+.auto-import-issues.jsonl
+.beads-credential-key
+
 # NOTE: Do NOT add negation patterns (e.g., !issues.jsonl) here.
 # They would override fork protection in .git/info/exclude, allowing
 # contributors to accidentally commit upstream issue databases.
