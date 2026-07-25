@@ -60,7 +60,7 @@ For the full strategic planning framework, OKR design, and AI-augmented decision
 
 ### Adversarial Debate — Rumelt Lite
 
-A lightweight protocol for pressure-testing strategy drafts using Richard Rumelt's "Good Strategy/Bad Strategy" framework. Every good strategy has a kernel: Diagnosis (the real challenge), Guiding Policy (the approach), and Coherent Actions (coordinated execution). The protocol screens for the four markers of bad strategy (fluff, failure to face the challenge, goals-as-strategy, disconnected actions), scores quality on a 0–30 scale, and runs structured debate across strategic personas (Strategist, Skeptic, Operator, Competitor) using ruflo hive-mind or parallel Claude Code agents.
+A lightweight protocol for pressure-testing strategy drafts using Richard Rumelt's "Good Strategy/Bad Strategy" framework. Every good strategy has a kernel: Diagnosis (the real challenge), Guiding Policy (the approach), and Coherent Actions (coordinated execution). The protocol screens for the four markers of bad strategy (fluff, failure to face the challenge, goals-as-strategy, disconnected actions), scores quality on a 0–30 scale, and runs structured debate across strategic personas (Strategist, Skeptic, Operator, Competitor) using parallel Claude Code agents.
 
 For the full protocol, scoring rubric, and persona definitions, see `references/adversarial-debate.md`. For maximum-rigor multi-model adversarial debate with external LLMs, use the `/adversarial-strategy` plugin.
 

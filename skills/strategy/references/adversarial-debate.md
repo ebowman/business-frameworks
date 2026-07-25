@@ -128,9 +128,9 @@ Follow this sequence for maximum effectiveness:
 | 4 | Feasibility | Can we actually execute this? |
 | 5 | Risks & Alternatives | What could go wrong? Other approaches? |
 
-### Tier 1: Ruflo Hive-Mind (when available)
+### Parallel Claude Code Agents
 
-Spawn a mesh hive-mind with four strategic personas:
+Launch four parallel subagents (via the Agent tool) with adversarial role prompts, each given the full strategy draft plus the persona's brief below:
 
 | Persona | Role | Focus |
 |---------|------|-------|
@@ -138,12 +138,6 @@ Spawn a mesh hive-mind with four strategic personas:
 | **Skeptic** | Devil's advocate | What assumptions are untested? What evidence is missing? |
 | **Operator** | Execution lens | Are actions realistic, sequenced, and resourced? |
 | **Competitor** | External threat | How would a smart competitor exploit gaps in this strategy? |
-
-Each agent analyzes the strategy from their perspective simultaneously. The consensus mechanism surfaces points of agreement and genuine dissent.
-
-### Tier 2: Parallel Claude Code Agents (always available)
-
-Launch parallel subagents with adversarial role prompts:
 
 1. **Strategist agent** — Evaluate the strategy kernel for internal consistency. Does the diagnosis identify the real constraint? Does the guiding policy create leverage? Do actions reinforce each other?
 
@@ -153,7 +147,7 @@ Launch parallel subagents with adversarial role prompts:
 
 4. **Competitor agent** — Play the smartest competitor. Given this strategy, what would you do to win? Where are the openings?
 
-Collect all four critiques, then synthesize: which issues are substantive (strengthen the strategy) vs. stylistic (ignore).
+Dispatch all four agents in a single batch so they run concurrently and reason independently (no cross-talk between personas). Each subagent returns its critique to the main context; there is no shared memory between them, so include any state a persona needs (the draft, prior round's revisions, prior scores) directly in its brief. Collect all four critiques, then synthesize in the main context: which issues are substantive (strengthen the strategy) vs. stylistic (ignore), and where personas agree vs. genuinely disagree.
 
 ### Dilution Checkpoint
 

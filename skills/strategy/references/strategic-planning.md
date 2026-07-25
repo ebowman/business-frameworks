@@ -393,17 +393,13 @@ AI works best for decisions that are:
 
 Rather than switching between separate chat tools, deploy coordinated AI agents that research, debate, and pressure-test decisions in parallel.
 
-**Tier 1: Ruflo Hive-Mind** (when ruflo MCP server is available)
-- Spawn a mesh hive-mind with strategic personas — CFO, Customer Advocate, Competitor Analyst, Operator
-- Each agent analyzes the decision from their perspective simultaneously
-- Consensus mechanism surfaces points of agreement and genuine dissent
-- Shared memory accumulates research findings across all four phases
-
-**Tier 2: Native Claude Code Agents** (always available)
-- Launch parallel subagents for independent research streams (e.g., market data, competitive analysis, internal metrics)
+**Native Claude Code Agents**
+- Launch parallel subagents (via the Agent tool) for independent research streams (e.g., market data, competitive analysis, internal metrics) or for distinct strategic personas — CFO, Customer Advocate, Competitor Analyst, Operator
+- Each agent analyzes its assigned slice of the decision independently and returns a summary to the main context; synthesize agreement and genuine dissent yourself once all summaries are back
 - Use WebSearch for benchmarks and competitive data (with source URLs for validation)
 - Use different model tiers: haiku for fast research sweeps, opus for deep strategic analysis
 - Chain sequential agent calls when one analysis depends on another's output
+- There is no shared memory between subagents — carry research findings forward across phases by keeping them in the main context (or `bd remember` for durable cross-session insights) and passing the relevant findings into each new agent's brief
 
 ### Setting Up for Success
 
@@ -430,8 +426,7 @@ AI excels here — it can read 7,500 words in about a minute versus five hours f
 
 **Use Case 2: Finding benchmarks and competitive data**
 - Use WebSearch agents to find industry benchmarks, conversion rates, and competitive comparisons — source URLs are returned for validation
-- Launch parallel research agents when you need data from multiple domains simultaneously
-- With ruflo: assign each research domain to a hive-mind agent for concurrent deep-dives
+- Launch parallel research agents when you need data from multiple domains simultaneously — assign each research domain to its own subagent for concurrent deep-dives
 
 **Use Case 3: Analyzing your own data**
 - Have AI identify what is in the dataset, then ask targeted analytical questions
@@ -445,25 +440,24 @@ AI excels here — it can read 7,500 words in about a minute versus five hours f
 
 - Ask AI to generate a range of strategic options based on gathered information
 - Spawn agents with distinct strategic lenses: optimistic vs. pessimistic, short-term vs. long-term, customer-centric vs. operations-centric
-- Have each agent think through pros/cons, risks, and tradeoffs for its assigned option set
-- With ruflo: use hive-mind broadcast to share context, then collect per-agent option analysis
+- Include the shared decision context in each agent's brief (subagents do not share memory), then have each agent think through pros/cons, risks, and tradeoffs for its assigned option set
+- Collect and compare the per-agent option analyses in the main context
 
 #### Phase 3: Pressure Testing
 
 - Use AI to stress-test your leading options
 - Ask it to argue against your preferred choice using the tiered approach:
-  1. **Rumelt Lite** (always available) — Run the Adversarial Debate protocol from `references/adversarial-debate.md`: screen for bad strategy markers, score quality on a 0–30 scale, and debate across Strategist/Skeptic/Operator/Competitor personas using ruflo hive-mind or parallel Claude Code agents
+  1. **Rumelt Lite** (always available) — Run the Adversarial Debate protocol from `references/adversarial-debate.md`: screen for bad strategy markers, score quality on a 0–30 scale, and debate across Strategist/Skeptic/Operator/Competitor personas using parallel Claude Code agents
   2. **Full `/adversarial-strategy` plugin** (for maximum rigor) — Multi-model adversarial debate across GPT and Claude models with formal scoring, versioned output, and Rumelt feedback simulation
 - Have it identify risks you have not considered
-- Simulate stakeholder objections by assigning stakeholder personas to separate agents
-- With ruflo: consensus voting across agents surfaces genuine dissent vs. unanimous agreement
+- Simulate stakeholder objections by assigning stakeholder personas to separate agents dispatched in parallel; collecting genuine dissent vs. unanimous agreement is a synthesis step you do in the main context after all agents report back
 
 #### Phase 4: Getting Buy-In
 
-- Use agents to draft stakeholder-specific communications in parallel — each agent tailors the message for a different audience (board, team, customers)
+- Use agents to draft stakeholder-specific communications in parallel — assign each stakeholder persona (board, team, customers) to its own agent, each tailoring the message for a different audience
 - Anticipate and prepare for questions and pushback
 - Build the case with data and narrative
-- With ruflo: assign each stakeholder persona to an agent, then synthesize into a unified communications plan
+- Synthesize the per-agent drafts into a unified communications plan once all agents report back
 
 ### The Human Filter
 
